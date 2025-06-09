@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acerca de la App - SENSIA</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    .about-section {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .about-img {
+      width: 90%;
+      max-width: 320px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      margin-bottom: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .about-img {
+        max-width: 400px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+  <nav id="side-menu" class="side-menu">
+    <button class="close-btn" onclick="closeMenu()">✖</button>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="acerca de.html">Acerca de</a></li>
+      <li><a href="#" class="highlight">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <button id="menu-toggle" onclick="openMenu()">☰</button>
+    <h1>SENSIA</h1>
+  </header>
+
+  <main>
+    <section class="about-section" style="background:#3498db;">
+      <img src="img2.jpg" alt="Pantalla de Episodios" class="about-img"/>
+      <h2>Rendimiento y optimización</h2>
+      <p>Usando las últimas optimizaciones para Android, SENSIA proporciona rendimiento y fluidez.</p>
+    </section>
+
+    <section class="about-section" style="background:#5dade2;">
+      <img src="img1.jpg" alt="Menú lateral" class="about-img"/>
+      <h2>Usabilidad y herramientas</h2>
+      <p>Esta app brinda múltiples herramientas para seguir, contabilizar y marcar funciones según tus necesidades.</p>
+    </section>
+
+    <section class="about-section" style="background:#85c1e9;">
+      <img src="img3.jpg" alt="Ficha de Anime" class="about-img"/>
+      <h2>Diseño Material Design</h2>
+      <p>Usando Material Design la app muestra un diseño agradable a la vista, también aporta fluidez y profundidad a la interfaz.</p>
+    </section>
+
+    <section class="about-section" style="background:#aed6f1;">
+      <img src="img4.jpg" alt="Catálogo de animes" class="about-img"/>
+      <h2>Variedad de funciones</h2>
+      <p>La app usa funciones pensadas para obtener todo lo que pueda servirte. Cuenta con actualizaciones cada mes para su mejoramiento.</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
+

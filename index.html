@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SENSIA</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+  <nav id="side-menu" class="side-menu">
+    <button class="close-btn" onclick="closeMenu()">✖</button>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="acerca de.html">Acerca de</a></li>
+      <li><a href="#" class="highlight">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <button id="menu-toggle" onclick="openMenu()">☰</button>
+    <h1>SENSIA</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="letra y logo.png" alt="SENSIA Logo" class="app-logo"/>
+      <h2>DESCARGA Y INSTALA NUESTRA APLICACIÓN</h2>
+      <button class="primary-btn" id="apk"><i class='bx bxs-download' ></i> DESCARGA LOCAL</button>
+      <button class="secondary-btn" onclick="window.location.href=''"><i class='bx bxs-shopping-bags'></i> DESCARGA DE TIENDA DE APPS (UptoDown)</button>
+      <img src="phone.png" alt="App Preview" class="app-preview"/>
+    </section>
+  </main>
+
+  <footer>
+    © Copyright 2025 Automatech - All Rights Reserved
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
