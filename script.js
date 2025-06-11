@@ -21,7 +21,7 @@ menuToggle.addEventListener('click', openMenu);
 
 DescargaAPK.addEventListener('click', function() {
   const enlace = document.createElement('a');
-  enlace.href = 'https://www.mediafire.com/file/v9372aw7s158af1/Sensia+v1.1.1.apk/file';
+  enlace.href = 'https://www.mediafire.com/file/8jxig97k93kyps2/Sensia_v1.1.2.apk/file';
   enlace.download = 'SENSIA.apk';
   document.body.appendChild(enlace);
   enlace.click();
